@@ -1,0 +1,4 @@
+# items
+ - linux
+ - git
+ - arduino

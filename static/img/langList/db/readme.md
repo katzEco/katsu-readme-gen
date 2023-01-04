@@ -1,0 +1,15 @@
+# items
+ - mongodb
+ - mysql
+ - postgreSQL
+ - redis
+ - mssql
+ - mariadb
+ - sqlite
+ - couchdb
+ - hive
+ - cassandra
+ - cockroachdb
+ - elasticsearch
+ - realm
+ - oracle

@@ -1,0 +1,11 @@
+# items
+ - aws
+ - bash
+ - docker
+ - jenkins
+ - gcloud
+ - azure
+ - travisci
+ - vagrant
+ - circleci
+ - kubernate

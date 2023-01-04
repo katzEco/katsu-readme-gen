@@ -1,0 +1,12 @@
+# items
+ - nodejs
+ - spring
+ - expressjs
+ - graphql
+ - kafka
+ - solr
+ - rabbitMQ
+ - hadoop
+ - nestjs
+ - openresty
+ - nginx
