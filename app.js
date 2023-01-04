@@ -9,6 +9,10 @@ let port = require('./src/port')
 let app = exp()
 let portNo = '1980'
 
+// Express Setting up
+app.use(exp.static('static'))
+
+// Function Call
 page.pListing(app)
 
 port.portRun(app, portNo)
