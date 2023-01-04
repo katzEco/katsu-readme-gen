@@ -1,0 +1,12 @@
+{
+  "name": "katsu-readme-gen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dethMastery/katsu-readme-gen",
+  "author": "Suphakit P. <me@suphakit.net>",
+  "license": "MIT"
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+}
