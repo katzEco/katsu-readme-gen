@@ -4,9 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/dethMastery/katsu-readme-gen",
   "author": "Suphakit P. <me@suphakit.net>",
-  "license": "MIT"
+  "license": "MIT",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
