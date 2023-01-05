@@ -1,7 +1,7 @@
 # todo List
 ## Main Part
- - Generate Canvas
- - Put Name & GH Profile Image into canvas
+ - ~~Generate Canvas~~
+ - ~~Put Name & GH Profile Image into canvas~~
  - Place Canvas on top of GH README
  - Don't Forgot My Blog Update :D
 
