@@ -39,9 +39,17 @@ async function canvasSummon(req, res) {
 
   let profPic = new Konva.Layer()
 
-  let imgLink = 'https://avatars.githubusercontent.com/u/'+ ghCall +'?v=4'
+  let profFrame = new Konva.Rect({
+    x: w - (310 + 20),
+    y: 15,
+    width: 320,
+    height: 310,
+    fill: '#ff6f61',
+    stroke: 'whitesmoke',
+    strokeWidth: 0,
+  })
 
-  //  ghProfileIMG = Konva.Image
+  let imgLink = 'https://avatars.githubusercontent.com/u/'+ ghCall +'?v=4'
   let profImg = await loadImage(imgLink)
   let ghProfileIMG = new Konva.Image ({
     x: w - (300 + 20),
@@ -51,6 +59,8 @@ async function canvasSummon(req, res) {
     height: 300,
     draggable: true,
   });
+
+  profPic.add(profFrame)
   profPic.add(ghProfileIMG)
 
 
