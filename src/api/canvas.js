@@ -63,9 +63,44 @@ async function canvasSummon(req, res) {
   profPic.add(profFrame)
   profPic.add(ghProfileIMG)
 
+  // Add some Text
+  let text = new Konva.Layer()
+  let summonGHName = new Konva.Text({
+    x: 30,
+    y: 30,
+    text: 'Github : ' + ghName,
+    fontSize: 40,
+    fontFamily: 'Calibri',
+    fill: 'whitesmoke',
+  })
+
+  let summonName = new Konva.Text({
+    x: 50,
+    y: 80,
+    text: req.query.name + ' ' + req.query.lName,
+    fontSize: 100,
+    fontFamily: 'Calibri',
+    fill: 'whitesmoke',
+  })
+
+  let date = new Date();
+  let yr = date.getFullYear()
+  let age = yr - req.query.bYear
+  let summonAge = new Konva.Text({
+    x: 70,
+    y: 190,
+    text: 'Age : ' + age,
+    fontSize: 50,
+    fontFamily: 'Calibri',
+    fill: 'whitesmoke',
+  })
+  text.add(summonGHName)
+  text.add(summonName)
+  text.add(summonAge)
 
   stage.add(base)
   stage.add(profPic)
+  stage.add(text)
 
   stage.draw()
 
