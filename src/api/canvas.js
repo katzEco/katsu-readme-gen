@@ -80,7 +80,7 @@ async function canvasSummon(req, res) {
   let text = new Konva.Layer()
   let fontColor = req.query.fg
   let summonGHName = new Konva.Text({
-    x: 30,
+    x: 40,
     y: 30,
     text: 'Github : ' + ghName,
     fontSize: 40,
@@ -89,7 +89,7 @@ async function canvasSummon(req, res) {
   })
 
   let summonName = new Konva.Text({
-    x: 50,
+    x: 60,
     y: 80,
     text: req.query.name + ' ' + req.query.lName,
     fontSize: 100,
@@ -98,7 +98,7 @@ async function canvasSummon(req, res) {
   })
 
   let summonSubText = new Konva.Text({
-    x: 70,
+    x: 80,
     y: 190,
     text: req.query.subText,
     fontSize: 40,
@@ -110,10 +110,10 @@ async function canvasSummon(req, res) {
   let yr = date.getFullYear()
   let age = yr - req.query.bYear
   let summonAge = new Konva.Text({
-    x: 90,
-    y: 240,
-    text: 'Age : ' + age,
-    fontSize: 50,
+    x: 120,
+    y: 300,
+    text: req.query.ageLeft + ' ' + age + ' ' + req.query.ageRight,
+    fontSize: 30,
     fontFamily: 'Calibri',
     fill: '#' + fontColor,
   })
