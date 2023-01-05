@@ -35,16 +35,27 @@ async function canvasSummon(req, res) {
 
   // Summon Profile Picture
   let ghName = req.query.gh
-  let ghCall = JSON.parse(JSON.stringify(await ghID.axiosData(ghName))).id
+  // let ghCall = JSON.parse(JSON.stringify(await ghID.axiosData(ghName))).id
+  let ghCall = 25049577
 
   let profPic = new Konva.Layer()
 
-  let profFrame = new Konva.Rect({
-    x: w - (310 + 20),
-    y: 15,
-    width: 320,
-    height: 310,
-    fill: '#ff6f61',
+  let profFrame1 = new Konva.Rect({
+    x: w - (300 + 30),
+    y: 30,
+    width: 300,
+    height: 300,
+    fill: '#' + req.query.fc1,
+    stroke: 'whitesmoke',
+    strokeWidth: 0,
+  })
+
+  let profFrame2 = new Konva.Rect({
+    x: w - (300 + 10),
+    y: 10,
+    width: 300,
+    height: 300,
+    fill: '#' + req.query.fc2,
     stroke: 'whitesmoke',
     strokeWidth: 0,
   })
@@ -60,7 +71,8 @@ async function canvasSummon(req, res) {
     draggable: true,
   });
 
-  profPic.add(profFrame)
+  profPic.add(profFrame1)
+  profPic.add(profFrame2)
   profPic.add(ghProfileIMG)
 
   // Add some Text
