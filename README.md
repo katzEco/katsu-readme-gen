@@ -42,11 +42,14 @@
 
 
 # Basic Call @ This Moment
-http://localhost:1980/api/?gh=dethMastery&name=Suphakit&lName=P.&bYear=2002&fc1=48847A&fc2=313E51
+http://localhost:1980/api/?gh=dethMastery&id=25049577&name=Suphakit&lName=P.&subText=A+music+composer+with+some+of+web+dev+skill&bYear=2002&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5
 
 gh = github UserName <br/>
 name = 1st nameBox <br />
 lName = 2nd nameBox <br />
+subText = 1 line textBox <br />
 bYear = birthYear ==> this will Calculate Age <br />
 fc1 = bottom color of profile frame <br />
 fc2 = top color of profile frame <br />
+bg = background color <br />
+fg = foreground color <br />
