@@ -36,7 +36,7 @@ async function canvasSummon(req, res) {
   // Summon Profile Picture
   let ghName = req.query.gh
   // let ghCall = JSON.parse(JSON.stringify(await ghID.axiosData(ghName))).id
-  let ghCall = 25049577
+  let ghCall = req.query.id
 
   let profPic = new Konva.Layer()
 
