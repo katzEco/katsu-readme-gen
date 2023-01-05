@@ -122,14 +122,14 @@ async function canvasSummon(req, res) {
   let yr = date.getFullYear()
   let age = yr - req.query.bYear
   let summonAge = new Konva.Text({
-    x: 0,
+    x: (w/2) - (180),
     y: h - 105,
-    width: w - (300 + 100),
+    width: (w/2) - (300 - 100),
     align: 'right',
     wrap: 'word',
     lineHeight: 1.5,
     text: req.query.ageLeft + ' ' + age + ' ' + req.query.ageRight,
-    fontSize: 30,
+    fontSize: 20,
     fontFamily: 'Calibri',
     fill: '#' + fontColor,
   })
