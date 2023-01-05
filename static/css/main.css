@@ -1,3 +1,5 @@
+@import url('./fonts.css');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -6,4 +8,57 @@ html, body {
 body {
   background-color: #2e2f2f;
   color: whitesmoke;
+}
+
+form {
+  width: 22rem;
+  text-align: center;
+  justify-content: center;
+}
+
+form input {
+  width: 90%;
+  padding: .5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+}
+
+input[name="name"], input[name="lName"] {
+  width: 41.3%;
+}
+
+input[name="name"] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[name="lName"] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input[name="ageLeft"], input[name="ageRight"] {
+  width: 36.5%;
+}
+
+input[name="ageLeft"] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[name="ageRight"] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+button[type="submit"] {
+  border-radius: 1rem;
+  border: none;
+  margin-top: .5rem;
+  padding: .75rem;
+  color: whitesmoke;
+  background: #ff6f61;
 }
