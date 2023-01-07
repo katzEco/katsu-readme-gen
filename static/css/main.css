@@ -60,20 +60,6 @@ input[name="ageRight"] {
   border-bottom-left-radius: 0;
 }
 
-button[type="submit"] {
-  border-radius: 1rem;
-  border: none;
-  margin-top: .5rem;
-  padding: .75rem;
-  color: whitesmoke;
-  background: #ff6f61;
-}
-
-button[type="submit"]:hover {
-  cursor: pointer;
-  opacity: .8;
-}
-
 form hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -108,6 +94,32 @@ select[name="sex"] {
   border-radius: 1rem;
   padding: .5rem;
   margin: .5rem;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+label[for="frontEnd[]"] {
+  font-size: 18px;
+}
+
+label[for="backEnd[]"] {
+  font-size: 18px;
+}
+
+button[type="submit"] {
+  border-radius: 1rem;
+  border: none;
+  margin: 1rem 0;
+  padding: .75rem;
+  color: whitesmoke;
+  background: #ff6f61;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  opacity: .8;
 }
 
 /* ============================================= */
