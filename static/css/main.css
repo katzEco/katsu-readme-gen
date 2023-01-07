@@ -11,7 +11,8 @@ body {
 }
 
 form {
-  width: 22rem;
+  min-width: 22rem;
+  max-width: 40rem;
   text-align: center;
   justify-content: center;
 }
@@ -27,7 +28,8 @@ form input {
 }
 
 input[name="name"], input[name="lName"] {
-  width: 41.3%;
+  min-width: 41.3%;
+  max-width: 43.5%;
 }
 
 input[name="name"] {
@@ -41,7 +43,8 @@ input[name="lName"] {
 }
 
 input[name="ageLeft"], input[name="ageRight"] {
-  width: 36.5%;
+  min-width: 36.5%;
+  max-width: 41.5%;
 }
 
 input[name="ageLeft"] {
