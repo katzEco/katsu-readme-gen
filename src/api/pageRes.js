@@ -1,8 +1,10 @@
 let md = require('./markdownGen')
+let bGuide = require('./blogGuide')
 
 // Function RUN
 async function genHTML(req, res) {
   let markdown = await md.genMarkdown(req, res)
+  let guide = await bGuide.guide(req, res)
 
   let page = `
     <!DOCTYPE html>
@@ -22,9 +24,13 @@ async function genHTML(req, res) {
           </h1>
 
           <form id="res">
-            <h2>: Result :</h2>
+            <h2>: Result for '${req.query.gh}' :</h2>
             <textarea id="MD" name="MD" rows="30">${markdown}</textarea>
           </form>
+
+          <div class="postGuide">
+            ${guide}
+          </div>
         </center>
       </body>
     </html>
