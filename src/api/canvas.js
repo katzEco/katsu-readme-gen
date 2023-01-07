@@ -19,10 +19,10 @@ async function canvasSummon(req, res) {
   // Set base
   let base = new Konva.Layer()
   let baseBG = new Konva.Rect({
-    x: 0,
-    y: 0,
-    width: w,
-    height: h,
+    x: 10,
+    y: 10,
+    width: w - 20,
+    height: h - 20,
     fill: '#' + req.query.bg,
     stroke: 'whitesmoke',
     strokeWidth: 0,
