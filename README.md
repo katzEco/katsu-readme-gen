@@ -2,7 +2,7 @@
 ## Main Part
  - ~~Generate Canvas~~
  - ~~Put Name & GH Profile Image into canvas~~
- - Place Canvas on top of GH README
+ - ~~Place Canvas on top of GH README~~
  - Don't Forgot My Blog Update :D
 
  - Profile Instruction
@@ -43,9 +43,10 @@
 
 # Basic Call @ This Moment
 ## Generate MD
-http://localhost:1980/api/?gh=dethMaster&name=Suphakit&lName=P.&subText=A+music+composer+with+some+of+web+dev+skill&bYear=2002&ageLeft=A+musician+at+aged&ageRight=who+love+to+coding+and+composing&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5
+http://localhost:1980/api/?gh=dethMastery&tw=georgekdeterk&name=Suphakit&lName=P.&subText=A+music+composer+with+some+of+web+dev+skill&bYear=2002&ageLeft=A+musician+at+aged&ageRight=who+love+to+coding+and+composing&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5
 
  - gh = github UserName <br/>
+ - tw = twitter Username <br />
  - name = 1st nameBox <br />
  - lName = 2nd nameBox <br />
  - subText = 1 line textBox <br />
@@ -58,10 +59,11 @@ http://localhost:1980/api/?gh=dethMaster&name=Suphakit&lName=P.&subText=A+music+
  - fg = foreground color <br />
 
 ## Canvas API
-http://localhost:1980/api/canvas/?gh=dethMastery&id=25049577&name=Suphakit&lName=P.&subText=A+music+composer+with+some+of+web+dev+skill&bYear=2002&ageLeft=A+musician+at+aged&ageRight=who+love+to+coding+and+composing&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5
+http://localhost:1980/api/canvas/?gh=dethMastery&id=25049577&tw=georgekdeterk&name=Suphakit&lName=P.&subText=A+music+composer+with+some+of+web+dev+skill&bYear=2002&ageLeft=A+musician+at+aged&ageRight=who+love+to+coding+and+composing&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5
 
  - gh = github UserName <br/>
  - id = github ID <br />
+ - tw = twitter Username <br />
  - name = 1st nameBox <br />
  - lName = 2nd nameBox <br />
  - subText = 1 line textBox <br />

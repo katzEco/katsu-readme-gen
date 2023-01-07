@@ -129,14 +129,40 @@ async function canvasSummon(req, res) {
     fontFamily: 'Calibri',
     fill: '#' + fontColor,
   })
+
   text.add(summonGHName)
   text.add(summonName)
   text.add(summonSubText)
   text.add(summonAge)
 
+  // Summon some Badge
+  let badgeLayer = new Konva.Layer()
+
+  let viewCall = `https://komarev.com/ghpvc/?username=${req.query.gh}&label=Profile%20views&color=0e75b6&style=for-the-badge`
+  let summonView = await loadImage(viewCall)
+  let viewBadge = new Konva.Image ({
+    x: 40,
+    y: h - 100,
+    image: summonView,
+    draggable: true,
+  });
+
+  let twitterLink = `https://img.shields.io/twitter/follow/${req.query.tw}?style=for-the-badge`
+  let twitterCall = await loadImage(twitterLink)
+  let twitterBadge = new Konva.Image ({
+    x: 40,
+    y: h - 65,
+    image: twitterCall,
+    draggable: true,
+  });
+
+  badgeLayer.add(viewBadge)
+  badgeLayer.add(twitterBadge)
+
   stage.add(base)
   stage.add(profPic)
   stage.add(text)
+  stage.add(badgeLayer)
 
   stage.draw()
 
