@@ -17,7 +17,6 @@
  - redux
  - gulp
  - vuetify
- - gulp
  - materialize
  - bulma
  - gtk
