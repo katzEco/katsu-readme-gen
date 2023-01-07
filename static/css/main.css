@@ -96,6 +96,20 @@ input[name="asks[]"]:nth-child(3) {
   border-bottom-left-radius: 0;
 }
 
+.sexBox {
+  text-align: center;
+}
+
+select[name="sex"] {
+  height: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+}
+
 /* ============================================= */
 /* Result */
 /* ============================================= */
