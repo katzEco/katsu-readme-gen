@@ -69,12 +69,31 @@ button[type="submit"] {
   background: #ff6f61;
 }
 
+button[type="submit"]:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
 form hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 70%;
   color: lightgray;
   opacity: .6;
+}
+
+input[name="asks[]"]:nth-child(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[name="asks[]"]:nth-child(2) {
+  border-radius: 0;
+}
+
+input[name="asks[]"]:nth-child(3) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* ============================================= */
