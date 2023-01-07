@@ -3,9 +3,6 @@ let canvas = require('canvas')
 const { loadImage, registerFont } = canvas;
 let Konva = require('konva/cmj').default
 
-// SRC Call
-let ghID = require('./ghID')
-
 // Variable Call
 let w = 1280;
 let h = 390;
@@ -36,7 +33,6 @@ async function canvasSummon(req, res) {
 
   // Summon Profile Picture
   let ghName = req.query.gh
-  // let ghCall = JSON.parse(JSON.stringify(await ghID.axiosData(ghName))).id
   let ghCall = req.query.id
 
   let profPic = new Konva.Layer()
