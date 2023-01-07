@@ -2,6 +2,7 @@
 let ghID = require('./ghID')
 let cnt = require('./appSplit/contact')
 let ask = require('./appSplit/ask')
+let sc = require('./appSplit/sex')
 
 // Variable Call
 let codeBlock = "```"
@@ -18,12 +19,14 @@ async function genMarkdown(req, res) {
 
   let contact = await cnt.contact(req)
   let asks = await ask.ask(req)
+  let cSex = await sc.sCheck(req.query)
+
 
   let about=`${codeBlock}js
 let ${req.query.gh} = {
-  pronouns: ,
-  askMeAbout: ["", "", ""]
-  IDE: "",
+  pronouns: ${cSex},
+  askMeAbout: ${asks}
+  IDE: "${req.query.ide}",
   contact: ${contact}
 }
 ${codeBlock}`
