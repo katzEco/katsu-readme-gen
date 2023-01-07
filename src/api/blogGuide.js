@@ -24,16 +24,12 @@ jobs:
     </p>
 
     <p>
-      <pre>
-        ${blogGuide}
-      </pre>
+      <pre>${blogGuide}</pre>
 
       <span>and add this Script in your README</span>
 
-      <pre>
-&lt;&#33;-- BLOG-POST-LIST:START --&gt;
-&lt;&#33;-- BLOG-POST-LIST:END --&gt;
-      </pre>
+      <pre>&lt;&#33;-- BLOG-POST-LIST:START --&gt;
+&lt;&#33;-- BLOG-POST-LIST:END --&gt;</pre>
     </p>
   `
 
