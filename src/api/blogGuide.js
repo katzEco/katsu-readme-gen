@@ -1,13 +1,13 @@
 // Function Run
 function guide(req, res) {
   let blogGuide = `
-name: Latest blog post workflow
+name: blog-post-update
 on: 
   schedule:
     - cron: '0 * * * *'
 jobs: 
   update-readme-with-blog: 
-    name: Update this repo's README with latest blog posts
+    name: Update your blog post on README
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
