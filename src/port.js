@@ -7,12 +7,12 @@ function portRun(app, port) {
       dat = dat + '='
     }
 
-    console.log('updated @ ' + new Date())
     console.log('');
     console.log(dat);
     console.log('');
     console.log('');
     console.log('          ' + url);
+    console.log('updated @ ' + new Date())
     console.log('');
     console.log('');
     console.log(dat);
