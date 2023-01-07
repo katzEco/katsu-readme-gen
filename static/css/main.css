@@ -11,10 +11,15 @@ body {
 }
 
 form {
-  min-width: 22rem;
-  max-width: 40rem;
+  min-width: 30rem !important;
+  max-width: 60rem !important;
   text-align: center;
   justify-content: center;
+}
+
+form h2 {
+  margin: 0;
+  padding: 0;
 }
 
 form input {
@@ -28,8 +33,7 @@ form input {
 }
 
 input[name="name"], input[name="lName"] {
-  min-width: 41.3%;
-  max-width: 43.5%;
+  width: 40%;
 }
 
 input[name="name"] {
@@ -43,8 +47,7 @@ input[name="lName"] {
 }
 
 input[name="ageLeft"], input[name="ageRight"] {
-  min-width: 36.5%;
-  max-width: 41.5%;
+  width: 33.3%;
 }
 
 input[name="ageLeft"] {
@@ -66,6 +69,14 @@ button[type="submit"] {
   background: #ff6f61;
 }
 
+form hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  color: lightgray;
+  opacity: .6;
+}
+
 /* ============================================= */
 /* Result */
 /* ============================================= */
@@ -74,7 +85,6 @@ form#res {
   max-width: 80%;
   min-width: 80%;
   justify-content: center;
-
 }
 
 textarea[name="MD"] {
@@ -94,4 +104,23 @@ textarea[name="MD"] {
 
   background: transparent;
   color: whitesmoke;
+}
+
+.postGuide {
+  width: 60%;
+  margin: auto 0;
+}
+
+.postGuide hr {
+  margin: 2rem 0;
+  width: 100%;
+  opacity: .6;
+}
+
+.postGuide pre {
+  width: 70%;
+  text-align: left;
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+  border-radius: 1rem;
 }

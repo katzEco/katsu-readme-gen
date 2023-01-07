@@ -8,6 +8,8 @@
 
     <!-- Call CSS -->
     <link rel="stylesheet" href="/css/main.css">
+    <!-- <link rel="stylesheet" href="/css/mobile.css"> -->
+    <link rel="stylesheet" href="https://dethmastery.github.io/katsuStrap/cdn/katsuStrap.css">
   </head>
   <body>
     <center>
@@ -15,19 +17,49 @@
         Canvas Generate :D
       </h1>
 
-      <form action="/api/" method="get">
-        <input type="text" name="gh" placeholder="Github UserName"><br />
-        <input type="text" name="id" placeholder="Github ID"><br />
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="lName" placeholder="Surname"><br />
-        <input type="text" name="subText" placeholder="Sub Text"><br />
-        <input type="text" name="bYear" placeholder="Year of Birth"><br />
-        <input type="text" name="ageLeft" placeholder="Text"> age 
-        <input type="text" name="ageRight" placeholder="Text"><br />
-        <input type="text" name="fc1" placeholder="Bottom Frame color"><br />
-        <input type="text" name="fc2" placeholder="Top Frame color"><br />
-        <input type="text" name="bg" placeholder="Background Color"><br />
-        <input type="text" name="fg" placeholder="Font Color"><br />
+      <form action="/api/" method="get" class="flex f-column">
+        <span style="color: #fd4d4d;">Form with '*' == require</span>
+        <br>
+        <h2>
+          <u>
+            Canvas Part :D
+          </u>
+        </h2>
+        <div class="flex f-row">
+          <div style="width: 100%;">
+            <input type="text" name="gh" placeholder="Github UserName*" required><br />
+            <input type="text" name="name" placeholder="Name*" required>
+            <input type="text" name="lName" placeholder="Surname*" required><br />
+            <input type="text" name="subText" placeholder="Sub Text"><br />
+          </div>
+          <div style="width: 100%;">
+            <input type="text" name="bYear" placeholder="Year of Birth*" required><br />
+            <input type="text" name="ageLeft" placeholder="Text"> age 
+            <input type="text" name="ageRight" placeholder="Text"><br />
+          </div>
+          <div style="width: 100%;">
+            <input type="text" name="fc1" placeholder="Bottom Frame color*" required><br />
+            <input type="text" name="fc2" placeholder="Top Frame color*" required><br />
+            <input type="text" name="bg" placeholder="Background Color*" required><br />
+            <input type="text" name="fg" placeholder="Font Color*" required><br />
+          </div>
+        </div>
+
+        <hr>
+
+        <h2>
+          <u>Social Part</u>
+        </h2>
+        <div class="flex f-row">
+          <div style="width: 100%;">
+            <input type="text" name="fbName" placeholder="Facebook Name">
+            <input type="text" name="fbLink" placeholder="Facebook Link">
+          </div>
+          <div style="width: 100%;">
+            <input type="text" name="tw" placeholder="Twitter Username*" required>
+          </div>
+        </div>
+        
         <button type="submit">Send!</button>
       </form>
     </center>
