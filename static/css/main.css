@@ -146,6 +146,8 @@ textarea[name="MD"] {
 
   border: 1px solid whitesmoke;
   border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 
   background: transparent;
   color: whitesmoke;

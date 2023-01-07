@@ -1,4 +1,4 @@
-function sCheck(req) {
+async function sCheck(req) {
   let pron
 
   if (req.sex == 'male') {

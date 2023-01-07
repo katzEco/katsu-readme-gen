@@ -9,6 +9,13 @@ function check(inp) {
   return rsp
 }
 
+function arrayCheck(inp) {
+  let rsp = Array.isArray(inp)
+
+  return rsp
+}
+
 module.exports = {
-  check
+  check,
+  arrayCheck
 }
