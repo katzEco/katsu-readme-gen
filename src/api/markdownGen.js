@@ -7,7 +7,7 @@ let codeBlock = "```"
 function check(inp) {
   let rsp
   if (inp != '') {
-    rsp = inp + ','
+    rsp = inp + ', '
   } else {
     rsp = inp
   }
@@ -28,7 +28,6 @@ async function genMarkdown(req, res) {
   let url = host + "/api/canvas/?gh=" + req.query.gh + '&id=' +  ghCall + '&tw=' + req.query.tw + '&name=' + req.query.name + '&lName=' + req.query.lName + '&subText=' + subText +'&bYear=' + req.query.bYear +'&ageLeft=' + ageLeft +'&ageRight=' + ageRight + '&fc1=' + req.query.fc1 + '&fc2=' + req.query.fc2 + '&bg=' + req.query.bg + '&fg=' + req.query.fg
 
   let contact = ''
-  console.log(req.query.fbLink);
   if(req.query.fbLink != undefined) {
     contact = check(contact) + `"[Facebook](https://fb.com/${req.query.fbLink})"`
   }
