@@ -2,10 +2,44 @@ let check = require("./check");
 
 async function tCheck(req) {
   let tech = ``
+  let temp = ``
 
-  if (req.frontEnd != undefined) {
-    tech = tech + `frontEnd: [
+  if (req.lang != undefined) {
+    if (tech != ``) {
+      temp = `
+    Lang: [
+    {`
+    } else {
+      temp = `Lang: [
       {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.lang) == true) {
+      req.lang.forEach(fe => {
+        tech = tech + `"${fe}", `
+      });
+  
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.lang}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
+  if (req.frontEnd != undefined) {
+    if (tech != ``) {
+      temp = `
+    frontEnd: [
+      {`
+    } else {
+      temp = `frontEnd: [
+        {`
+    }
+
+    tech = check.check(tech) + temp
 
     if (check.arrayCheck(req.frontEnd) == true) {
       req.frontEnd.forEach(fe => {
@@ -21,9 +55,16 @@ async function tCheck(req) {
     }
   }
   if (req.backEnd != undefined) {
-    tech = check.check(tech) + `
+    if (tech != ``) {
+      temp = `
     backEnd: [
       {`
+    } else {
+      temp = `backEnd: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
 
     if (check.arrayCheck(req.backEnd) == true) {
       req.backEnd.forEach(be => {
@@ -37,9 +78,6 @@ async function tCheck(req) {
       tech = tech.slice(0, -2) + `}
     ]` 
     }
-
-    tech = tech.slice(0, -2) + `}
-    ]`
   }
 
   return tech
