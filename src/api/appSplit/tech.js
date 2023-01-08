@@ -129,6 +129,31 @@ async function tCheck(req) {
     ]` 
     }
   }
+  if (req.baas != undefined) {
+    if (tech != ``) {
+      temp = `
+    AI: [
+      {`
+    } else {
+      temp = `BaaS: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.baas) == true) {
+      req.baas.forEach(bs => {
+        tech = tech + `"${bs}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.baas}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
 
   return tech
 }
