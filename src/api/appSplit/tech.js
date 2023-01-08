@@ -132,7 +132,7 @@ async function tCheck(req) {
   if (req.baas != undefined) {
     if (tech != ``) {
       temp = `
-    AI: [
+    BaaS: [
       {`
     } else {
       temp = `BaaS: [
