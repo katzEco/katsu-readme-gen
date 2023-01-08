@@ -29,7 +29,6 @@ let ${req.query.gh} = {
   pronouns: ${cSex},
   askMeAbout: ${asks}
   IDE: "${req.query.ide}",
-  contacts: [${contact}],
   technologies: {
     ${tech}
   }
@@ -44,6 +43,9 @@ ${codeBlock}`
 # About me
 
 ${about}
+
+# Contact
+${contact}
 
 <!-- Unused Component but used for Call! -->
 <img src="https://komarev.com/ghpvc/?username=${req.query.gh}&label=Profile%20views&color=0e75b6&style=for-the-badge" style="display: none;">`
