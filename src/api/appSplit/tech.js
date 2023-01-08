@@ -104,6 +104,31 @@ async function tCheck(req) {
     ]` 
     }
   }
+  if (req.AIs != undefined) {
+    if (tech != ``) {
+      temp = `
+    AI: [
+      {`
+    } else {
+      temp = `AI: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.AIs) == true) {
+      req.AIs.forEach(ai => {
+        tech = tech + `"${ai}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.AIs}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
 
   return tech
 }
