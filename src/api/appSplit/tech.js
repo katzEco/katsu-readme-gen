@@ -254,6 +254,31 @@ async function tCheck(req) {
     ]` 
     }
   }
+  if (req.mDev != undefined) {
+    if (tech != ``) {
+      temp = `
+    mobileDev: [
+      {`
+    } else {
+      temp = `mobileDev: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.mDev) == true) {
+      req.mDev.forEach(dev => {
+        tech = tech + `"${dev}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.mDev}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
 
   return tech
 }
