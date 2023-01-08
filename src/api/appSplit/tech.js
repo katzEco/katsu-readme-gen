@@ -304,6 +304,31 @@ async function tCheck(req) {
     ]` 
     }
   }
+  if (req.sw != undefined) {
+    if (tech != ``) {
+      temp = `
+    staticSiteGenerator: [
+      {`
+    } else {
+      temp = `staticSiteGenerator: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.sw) == true) {
+      req.sw.forEach(sws => {
+        tech = tech + `"${sws}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.sw}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
 
   return tech
 }
