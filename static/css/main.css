@@ -100,11 +100,7 @@ input[type="checkbox"] {
   width: auto;
 }
 
-label[for="frontEnd[]"] {
-  font-size: 18px;
-}
-
-label[for="backEnd[]"] {
+label[for="frontEnd[]"], label[for="backEnd[]"], label[for="lang[]"] {
   font-size: 18px;
 }
 
