@@ -216,7 +216,7 @@ async function tCheck(req) {
 
     tech = check.check(tech) + temp
 
-    if (check.arrayCheck(req.dtv) == true) {
+    if (check.arrayCheck(req.autos) == true) {
       req.autos.forEach(auto => {
         tech = tech + `"${auto}", `
       })
@@ -225,6 +225,31 @@ async function tCheck(req) {
     ]` 
     } else {
       tech = tech + `"${req.autos}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
+  if (req.dOps != undefined) {
+    if (tech != ``) {
+      temp = `
+    devOps: [
+      {`
+    } else {
+      temp = `devOps: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.dOps) == true) {
+      req.dOps.forEach(dev => {
+        tech = tech + `"${dev}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.dOps}", `
       tech = tech.slice(0, -2) + `}
     ]` 
     }
