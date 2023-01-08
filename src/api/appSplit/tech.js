@@ -179,6 +179,31 @@ async function tCheck(req) {
     ]` 
     }
   }
+  if (req.dtv != undefined) {
+    if (tech != ``) {
+      temp = `
+    dataVisualiser: [
+      {`
+    } else {
+      temp = `dataVisualiser: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.dtv) == true) {
+      req.dtv.forEach(dv => {
+        tech = tech + `"${dv}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.dtv}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
 
   return tech
 }
