@@ -204,6 +204,31 @@ async function tCheck(req) {
     ]` 
     }
   }
+  if (req.autos != undefined) {
+    if (tech != ``) {
+      temp = `
+    automations: [
+      {`
+    } else {
+      temp = `automations: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.dtv) == true) {
+      req.autos.forEach(auto => {
+        tech = tech + `"${auto}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.autos}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
 
   return tech
 }
