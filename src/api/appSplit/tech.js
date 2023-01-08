@@ -7,10 +7,10 @@ async function tCheck(req) {
   if (req.lang != undefined) {
     if (tech != ``) {
       temp = `
-    Lang: [
+    langs: [
     {`
     } else {
-      temp = `Lang: [
+      temp = `langs: [
       {`
     }
 
