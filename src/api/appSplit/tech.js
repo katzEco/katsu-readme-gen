@@ -154,6 +154,31 @@ async function tCheck(req) {
     ]` 
     }
   }
+  if (req.fw != undefined) {
+    if (tech != ``) {
+      temp = `
+    frameWorks: [
+      {`
+    } else {
+      temp = `frameWorks: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.fw) == true) {
+      req.fw.forEach(ffw => {
+        tech = tech + `"${ffw}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.fw}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
 
   return tech
 }
