@@ -17,8 +17,8 @@ async function tCheck(req) {
     tech = check.check(tech) + temp
 
     if (check.arrayCheck(req.lang) == true) {
-      req.lang.forEach(fe => {
-        tech = tech + `"${fe}", `
+      req.lang.forEach(lang => {
+        tech = tech + `"${lang}", `
       });
   
       tech = tech.slice(0, -2) + `}
@@ -75,6 +75,31 @@ async function tCheck(req) {
     ]` 
     } else {
       tech = tech + `"${req.backEnd}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
+  if (req.dbs != undefined) {
+    if (tech != ``) {
+      temp = `
+    databases: [
+      {`
+    } else {
+      temp = `databases: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.dbs) == true) {
+      req.dbs.forEach(db => {
+        tech = tech + `"${db}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.dbs}", `
       tech = tech.slice(0, -2) + `}
     ]` 
     }
