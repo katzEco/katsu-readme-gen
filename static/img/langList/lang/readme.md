@@ -19,5 +19,4 @@
  - rust
  - huskell
  - elixer
- - erlang
  - nim 
