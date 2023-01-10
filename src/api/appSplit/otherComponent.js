@@ -1,13 +1,13 @@
+let cnt = require('./centerizing')
+
 async function comp(ghUserName) {
   let statHead = '# My Stats'
-  let statBody = `<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=${ghUserName}&label=Profile%20views&color=0e75b6&style=for-the-badge" />
-</p>`
+  let statBody = `${cnt.cent(`<a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=${ghUserName}&theme=onedark&title=MultiLanguage,Stars,Commit,Followers,Issues,Repositories" alt="dethmastery" align="center" /></a>`)}
+  `
 
   let final = `${statHead}
 
-${statBody}
-  `
+${statBody}`
 
   return final
 }

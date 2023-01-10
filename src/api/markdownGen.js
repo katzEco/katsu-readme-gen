@@ -56,11 +56,10 @@ ${about}
 ${contact}
 
 ${otherComponent}
-
 <br />
 
 <!-- Unused Component but used for Call! -->
-${unused}
+${central.cent(unused)}
 `
 
   return `<center>
