@@ -36,6 +36,12 @@ let dethMastery = {
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dethMastery&theme=onedark&title=MultiLanguage,Stars,Commit,Followers,Issues,Repositories" alt="dethmastery" align="center" /></a>
 </p>
+<p align="center">
+  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api?username=dethMastery&count_private=true&show_icons=true&theme=panda" alt="statCard" /></a>
+</p>
+<p align="center">
+  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api/top-langs/?username=dethMastery&layout=compact&theme=panda" alt="statCard" /></a>
+</p>
   
 <br />
 
