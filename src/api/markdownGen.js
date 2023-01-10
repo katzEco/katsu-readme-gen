@@ -4,6 +4,8 @@ let cnt = require('./appSplit/contact')
 let ask = require('./appSplit/ask')
 let sc = require('./appSplit/sex')
 let tch = require('./appSplit/tech')
+let otC = require('./appSplit/otherComponent')
+let central = require('./appSplit/centerizing')
 
 // Variable Call
 let codeBlock = "```"
@@ -22,7 +24,7 @@ async function genMarkdown(req, res) {
   let asks = await ask.ask(req)
   let cSex = await sc.sCheck(req.query)
   let tech = await tch.tCheck(req.query)
-
+  let otherComponent = await otC.comp(req.query.gh)
 
   let about=`${codeBlock}js
 let ${req.query.gh} = {
@@ -34,6 +36,9 @@ let ${req.query.gh} = {
   }
 }
 ${codeBlock}`
+
+  let unused = `<img src="https://komarev.com/ghpvc/?username=${req.query.gh}&label=Profile%20views&color=0e75b6&style=for-the-badge" style="display: none; opacity:0;"></img>
+  `
 
   let md = `<a href="https://twitter.com/${req.query.tw}" target="_blank">
   <img src="${url}">
@@ -50,12 +55,16 @@ ${about}
 
 ${contact}
 
+${otherComponent}
+
 <br />
 
 <!-- Unused Component but used for Call! -->
-<img src="https://komarev.com/ghpvc/?username=${req.query.gh}&label=Profile%20views&color=0e75b6&style=for-the-badge" style="display: none;">`
+${unused}
+`
 
-  return md
+  return `<center>
+${md}</center>`
 }
 
 // Function Export
