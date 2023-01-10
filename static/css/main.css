@@ -32,6 +32,12 @@ form input {
   border: none;
 }
 
+form div div {
+  justify-content: center;
+  text-align: center;
+}
+
+
 input[name="name"], input[name="lName"] {
   width: 40%;
 }
