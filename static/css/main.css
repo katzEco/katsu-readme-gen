@@ -13,7 +13,7 @@ body {
 form {
   min-width: 30rem !important;
   max-width: 60rem !important;
-  text-align: center;
+  text-align: left;
   justify-content: center;
 }
 
