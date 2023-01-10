@@ -1,5 +1,5 @@
 function cent(inp) {
-  let centerize = `<p align="center">${inp}</p align="center"`
+  let centerize = `<p align="center">${inp}</p>`
 
   return centerize
 }
