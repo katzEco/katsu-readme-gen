@@ -40,6 +40,8 @@ let dethMastery = {
 <br />
 
 <!-- Unused Component but used for Call! -->
-<img src="https://komarev.com/ghpvc/?username=dethMastery&label=Profile%20views&color=0e75b6&style=for-the-badge" style="display: none; opacity:0;"></img>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=dethMastery&label=Profile%20views&color=0e75b6&style=for-the-badge" style="display: none; opacity:0;"></img>
   
+</p>
 </center>
