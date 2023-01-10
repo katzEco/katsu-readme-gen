@@ -1,5 +1,5 @@
 function cent(inp) {
-  let centerize = `<div style="width: 100%; justify-content: center; text-align: center;">${inp}</div>`
+  let centerize = `<p align="center">${inp}</p align="center"`
 
   return centerize
 }
