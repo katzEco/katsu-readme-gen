@@ -63,7 +63,7 @@ async function gen(req, res) {
 
   let img = base(width, height, data)
 
-  // res.setHeader('content-type', "image/svg+xml")
+  res.setHeader('content-type', "image/svg+xml")
   res.send(img)
 }
 
