@@ -168,6 +168,13 @@ async function canvasSummon(req, res) {
 
   // send IMG Buffer
   var img = Buffer.from(stage.toDataURL().slice(22), 'base64');
+
+  badgeLayer.destroy()
+  text.destroy()
+  profPic.destroy()
+  base.destroy()
+  stage.destroy()
+
   res.setHeader('content-type', "image/png")
   res.send(img)
 }
