@@ -48,4 +48,4 @@ Give a ⭐️ if this project helped you!
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-_And This Project is developing with 🤍 by [dethMastery](https://github.com/dethMastery)_
+_And developing with 🤍 by [dethMastery](https://github.com/dethMastery)_
