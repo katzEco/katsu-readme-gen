@@ -1,6 +1,6 @@
 // subFunction
 function base(w, h, inp) {
-  let b = `<svg width="${w}" height="${h}">${inp}</svg>`
+  let b = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg">${inp}</svg>`
 
   return b
 }
@@ -30,7 +30,7 @@ async function gen(req, res) {
     }
   </style>
 
-  <rect width="${width - 40}" height="${height - 40}" x="20" y="20" style="fill:#${query.bg}" rx="10" ry="10" />
+  <rect width="${width - 40}" height="${height - 40}" x="20" y="20" style="fill:#${query.bg};" rx="10" ry="10" />
 
   <g id="imageBox">
     <rect width="275" height="275" x="${width - (275 + 40)}" y="40" id="topFrame" style="fill:#${query.fc2};" />
@@ -50,14 +50,14 @@ async function gen(req, res) {
     </text>
     <foreignObject x="${width - ((width/2) + 100)}" y="${height - (50 + 90)}" width="${width/2 - (100 + 150)}" height="150" text-anchor="end">
       <p xmlns="http://www.w3.org/1999/xhtml" style="color: #${query.fg}; font-size: 20px; font-family: 'LINEseed-Regular', 'Calibri'; text-align: right;">
-        ${query.ageLeft} ${age} ${query.ageRight}
+        <![CDATA[${query.ageLeft} ${age} ${query.ageRight}]]>
       </p>
     </foreignObject>
   </g>
 
   <g id="badgeBox">
-    <image href="https://img.shields.io/twitter/follow/${query.tw}?logo=twitter&style=for-the-badge" x="50" y="${height - (50 + 25)}" />
-    <image href="https://komarev.com/ghpvc/?username=${query.gh}&label=Profile%20views&color=0e75b6&style=for-the-badge" x="50" y="${height - (50 + 65)}" />
+    <image href="https://img.shields.io/twitter/follow/${query.tw}?logo=twitter&amp;style=for-the-badge" x="50" y="${height - (50 + 25)}" />
+    <image href="https://komarev.com/ghpvc/?username=${query.gh}&amp;label=Profile%20views&amp;color=0e75b6&amp;style=for-the-badge" x="50" y="${height - (50 + 65)}" />
   </g>
 `
 
