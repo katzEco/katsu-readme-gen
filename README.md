@@ -16,11 +16,11 @@ This project can fully build a markdown on its page only things you need to do i
 
 All you need to do is just see an image tag in the 2nd or 3rd line which would be like this 
 
-`<img src="http://readme.katsuragi.cyou/api/``canvas``/?gh=[ghUserName]&id=...">`
+`<img src="http://readme.katsuragi.cyou/api/`<mark>canvas</mark>`/?gh=[ghUserName]&id=...">`
 
 change the highlight to svg like this
 
-`<img src="http://readme.katsuragi.cyou/api/`==svg==`/?gh=[ghUserName]&id=...">`
+`<img src="http://readme.katsuragi.cyou/api/`<mark>svg</mark>`/?gh=[ghUserName]&id=...">`
 
 and yes you got your svg image :D
 
