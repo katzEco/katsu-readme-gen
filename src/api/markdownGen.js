@@ -18,7 +18,7 @@ async function genMarkdown(req, res) {
   let subText = req.query.subText.split(' ').join('+')
   let ageLeft = req.query.ageLeft.split(' ').join('+')
   let ageRight = req.query.ageRight.split(' ').join('+')
-  let url = host + "/api/svg/?gh=" + req.query.gh + '&id=' +  ghCall + '&tw=' + req.query.tw + '&name=' + req.query.name + '&lName=' + req.query.lName + '&subText=' + subText +'&bYear=' + req.query.bYear +'&ageLeft=' + ageLeft +'&ageRight=' + ageRight + '&fc1=' + req.query.fc1 + '&fc2=' + req.query.fc2 + '&bg=' + req.query.bg + '&fg=' + req.query.fg
+  let url = host + "/api/canvas/?gh=" + req.query.gh + '&id=' +  ghCall + '&tw=' + req.query.tw + '&name=' + req.query.name + '&lName=' + req.query.lName + '&subText=' + subText +'&bYear=' + req.query.bYear +'&ageLeft=' + ageLeft +'&ageRight=' + ageRight + '&fc1=' + req.query.fc1 + '&fc2=' + req.query.fc2 + '&bg=' + req.query.bg + '&fg=' + req.query.fg
 
   let contact = await cnt.contact(req)
   let asks = await ask.ask(req)
