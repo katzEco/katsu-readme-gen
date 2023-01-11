@@ -37,10 +37,13 @@ let dethMastery = {
   <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dethMastery&theme=onedark&title=MultiLanguage,Stars,Commit,Followers,Issues,Repositories" alt="dethmastery" align="center" /></a>
 </p>
 <p align="center">
-  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api?username=dethMastery&count_private=true&show_icons=true&theme=nord&border=none" alt="statCard" /></a>
+  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api?username=dethMastery&count_private=true&show_icons=true&theme=nord&hide_border=true" alt="statCard" /></a>
 </p>
 <p align="center">
-  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api/top-langs/?username=dethMastery&layout=compact&theme=nord" alt="statCard" /></a>
+  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api/top-langs/?username=dethMastery&layout=compact&theme=nord&hide_border=true" alt="statCard" /></a>
+</p>
+<p align="center">
+  <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=dethMastery&theme=nord&hide_border=true&border_radius=10" alt="streakCard" /></a>
 </p>
   
 <br />
