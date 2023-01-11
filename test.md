@@ -33,7 +33,7 @@ let dethMastery = {
 
 # My Stats
 
-<div style="background: #2E3541;">
+<p style="background: #2E3541;">
   <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dethMastery&theme=onedark&title=MultiLanguage,Stars,Commit,Followers,Issues,Repositories" alt="dethmastery" align="center" /></a>
 </p>
@@ -46,7 +46,7 @@ let dethMastery = {
 <p align="center">
   <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=dethMastery&theme=nord&hide_border=true&border_radius=10" alt="streakCard" /></a>
 </p>
-</div>
+</p>
 <br />
 
 <!-- Unused Component but used for Call! -->
