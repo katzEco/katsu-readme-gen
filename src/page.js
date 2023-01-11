@@ -1,5 +1,6 @@
 // SRC Call
 let cc = require('./api/canvas')
+let svg = require('./api/svgGen')
 let pageGen = require('./api/pageRes')
 let mdGen = require('./api/markdownGen')
 let blogGuide = require('./api/blogGuide')
@@ -20,6 +21,10 @@ function pListing(app) {
 
   app.get('/api/canvas', (req, res) => {
     cc.canvasSummon(req, res)
+  })
+
+  app.get('/api/svg', (req, res) => {
+    svg.gen(req, res)
   })
 
   app.get('/api/blogGuide', (req, res) => {

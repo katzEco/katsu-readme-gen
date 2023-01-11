@@ -166,7 +166,6 @@ async function canvasSummon(req, res) {
 
   stage.draw()
 
-
   // send IMG Buffer
   var img = Buffer.from(stage.toDataURL().slice(22), 'base64');
   res.setHeader('content-type', "image/png")
