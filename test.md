@@ -1,25 +1,52 @@
 <center>
-<a href="https://twitter.com/georgekdeterk" target="_blank">
-  <img src="http://localhost:1980/api/canvas/?gh=dethMastery&id=25049577&tw=georgekdeterk&name=Suphakit&lName=P.&subText=A+music+composer+with+some+of+web+dev+skill&bYear=2002&ageLeft=A+musician+at+aged&ageRight=who+love+to+coding+and+composing&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5">
+<a href="https://twitter.com/kana2011th" target="_blank">
+  <img src="http://localhost:1980/api/svg/?gh=kana2011th&id=1833001&tw=kana2011th&name=Khanaphon&lName=Phaengtan&subText=full-stack+dev.+now+in+sup.+stuck+in+port.&bYear=2000&ageLeft=kinda+Full-Stack+Developer+at+age&ageRight=&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5">
 </a>
 <br/>
 
 # About me
 
 ```js
-let dethMastery = {
+let kana2011th = {
   pronouns: "He | Him",
-  askMeAbout: ["game", "web dev", "music"]
-  IDE: "vsCode",
+  askMeAbout: ["a", "a", "a"]
+  IDE: "VSCode",
   technologies: {
     langs: [
-      {"C", "Cpp"}
+      {"C", "C++", "C#"}
     ], 
     frontEnd: [
-      {"Vue.js", "CSS3", "HTML5"}
+      {"Vue.js", "React.js", "Svelte.js"}
+    ], 
+    backEnd: [
+      {"Express.js", "Spring"}
+    ], 
+    databases: [
+      {"PostgreSQL"}
     ], 
     AI: [
-      {"mongoDB"}
+      {"Seaborn"}
+    ], 
+    frameWorks: [
+      {"Electron"}
+    ], 
+    dataVisualiser: [
+      {"d3.js"}
+    ], 
+    automations: [
+      {"IFTTT"}
+    ], 
+    devOps: [
+      {"CircleCI"}
+    ], 
+    mobileDev: [
+      {"Dart", "ReactNative"}
+    ], 
+    staticSiteGenerator: [
+      {"MiddleMan"}
+    ], 
+    staticSiteGenerator: [
+      {"Adobe XD"}
     ]
   }
 }
@@ -29,31 +56,31 @@ let dethMastery = {
 
 # Contact
 
-"[Facebook](https://fb.com/detzz.in.th)", "[Discord](https://did.000198.xyz/@298415109359796234)", "[Twitter](https://twitter.com/georgekdeterk)", "[E-mail](mailto:owner@detzz.in.th)"
+"[Facebook](https://fb.com/)", "[Discord](https://did.000198.xyz/@)", "[Twitter](https://twitter.com/kana2011th)", "[E-mail](mailto:)"
 
 # My Stats
 
   <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dethMastery&theme=onedark&title=MultiLanguage,Stars,Commit,Followers,Issues,Repositories" alt="dethmastery" align="center" /></a>
+  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kana2011th&theme=onedark&title=MultiLanguage,Stars,Commit,Followers,Issues,Repositories" alt="dethmastery" align="center" /></a>
 </p>
 <p style="width: 100%; background-color: #2E3541;">
   <p align="center">
-  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api?username=dethMastery&count_private=true&show_icons=true&theme=nord&hide_border=true" alt="statCard" /></a>
+  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api?username=kana2011th&count_private=true&show_icons=true&theme=nord&hide_border=true" alt="statCard" /></a>
 </p>
   <p align="center">
-  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api/top-langs/?username=dethMastery&layout=compact&theme=nord&hide_border=true" alt="statCard" /></a>
+  <a href="https://stat-card.000198.xyz"><img src="https://stat-card.000198.xyz/api/top-langs/?username=kana2011th&layout=compact&theme=nord&hide_border=true" alt="statCard" /></a>
 </p>
   <p align="center">
   <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=dethMastery&theme=nord&hide_border=true&border_radius=10" alt="streakCard" /></a>
 </p>
 </p>
-
+ 
 
 <br />
 
 <!-- Unused Component but used for Call! -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=dethMastery&label=Profile%20views&color=0e75b6&style=for-the-badge" style="display: none; opacity:0;"></img>
+  <img src="https://komarev.com/ghpvc/?username=kana2011th&label=Profile%20views&color=0e75b6&style=for-the-badge" style="display: none; opacity:0;"></img>
   
 </p>
 </center>
