@@ -36,8 +36,8 @@
 ## Addons
   - ~~visitor count badge~~
   - ~~gh trophy~~
-  - gh profile stats card (w/ theme selector) (using https://stat-card.000198.xyz/api?username=dethMastery)
-  - gh streak stats
+  - ~~gh profile stats card (w/ theme selector) (using https://stat-card.000198.xyz/api?username=dethMastery)~~
+  - ~~gh streak stats~~
   - ~~twitter badge~~
 
 
