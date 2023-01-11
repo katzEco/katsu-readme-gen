@@ -12,7 +12,7 @@ async function comp(ghUserName) {
 
   let final = `${statHead}
 
-  ${statBody}
+  ${statBody} 
 `
 
   return final
