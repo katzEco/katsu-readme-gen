@@ -29,15 +29,20 @@ async function gen(req, res) {
   <rect width="${width - 40}" height="${height - 40}" x="20" y="20" style="fill:#${query.bg}" rx="10" ry="10" />
 
   <g id="imageBox">
-    <rect width="300" height="300" x="${width - (300 + 35)}" y="35" id="topFrame" style="fill:#${query.fc2}" id="#topFrame" />
-    <rect width="300" height="300" x="${width - (300 + 55)}" y="55" id="topFrame" style="fill:#${query.fc1}" id="#bottomFrame" />
-    <image href="https://avatars.githubusercontent.com/u/${query.id}?v=4" height="300" width="300" x="${width - (300 + 45)}" y="45" />
+    <rect width="275" height="275" x="${width - (275 + 40)}" y="40" id="topFrame" style="fill:#${query.fc2};" />
+    <rect width="275" height="275" x="${width - (275 + 60)}" y="60" id="bottomFrame" style="fill:#${query.fc1};" />
+    <image href="https://avatars.githubusercontent.com/u/${query.id}?v=4" height="275" width="275" x="${width - (275 + 50)}" y="50" />
   </g>
 
   <g id="textBox">
-    <text x="40" y="60" width="600" height="200" font-family="LINEseed-Regular, Calibri" style="fill: #${query.fg}; font-size: 24px;">
+    <text x="40" y="60" width="500" height="200" font-family="LINEseed-Regular, Calibri" style="fill: #${query.fg}; font-size: 24px;">
       Github : ${query.gh}
     </text>
+  </g>
+
+  <g id="badgeBox">
+    <image href="https://img.shields.io/twitter/follow/${query.tw}?logo=twitter&style=for-the-badge" x="40" y="${height - (40 + 25)}" />
+    <image href="https://komarev.com/ghpvc/?username=${query.gh}&label=Profile%20views&color=0e75b6&style=for-the-badge" x="40" y="${height - (40 + 60)}" />
   </g>
 `
 
