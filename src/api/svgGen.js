@@ -42,10 +42,10 @@ async function gen(req, res) {
     <text x="50" y="60" width="500" height="200" font-family="LINEseed-Regular, Calibri" style="fill: #${query.fg}; font-size: 24px;">
       Github : ${query.gh}
     </text>
-    <text x="70" y="130" width="480" height="200" font-family="LINEseed-Regular, Calibri" style="fill: #${query.fg}; font-size: 75px;">
+    <text x="70" y="145" width="480" height="200" font-family="LINEseed-Regular, Calibri" style="fill: #${query.fg}; font-size: 75px;">
       ${query.name} ${query.lName}
     </text>
-    <text x="90" y="180" width="480" height="150" font-family="LINEseed-Regular, Calibri" style="fill: #${query.fg}; font-size: 20px;">
+    <text x="90" y="190" width="480" height="150" font-family="LINEseed-Regular, Calibri" style="fill: #${query.fg}; font-size: 20px;">
       ${query.subText}
     </text>
     <foreignObject x="${width - ((width/2) + 100)}" y="${height - (50 + 90)}" width="${width/2 - (100 + 150)}" height="150" text-anchor="end">
