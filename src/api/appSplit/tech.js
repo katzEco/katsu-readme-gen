@@ -307,10 +307,10 @@ async function tCheck(req) {
   if (req.sw != undefined) {
     if (tech != ``) {
       temp = `
-    staticSiteGenerator: [
+    softwares: [
       {`
     } else {
-      temp = `staticSiteGenerator: [
+      temp = `software: [
       {`
     }
 
@@ -325,6 +325,31 @@ async function tCheck(req) {
     ]` 
     } else {
       tech = tech + `"${req.sw}", `
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    }
+  }
+  if (req.others != undefined) {
+    if (tech != ``) {
+      temp = `
+    others: [
+      {`
+    } else {
+      temp = `other: [
+      {`
+    }
+
+    tech = check.check(tech) + temp
+
+    if (check.arrayCheck(req.others) == true) {
+      req.others.forEach(other => {
+        tech = tech + `"${other}", `
+      })
+
+      tech = tech.slice(0, -2) + `}
+    ]` 
+    } else {
+      tech = tech + `"${req.others}", `
       tech = tech.slice(0, -2) + `}
     ]` 
     }
