@@ -1,6 +1,6 @@
 <center>
 <a href="https://twitter.com/kana2011th" target="_blank">
-  <img src="http://readme.katsuragi.cyou/api/canvas/?gh=kana2011th&id=1833001&tw=kana2011th&name=Khanaphon&lName=P.&subText=full-stack+dev.+now+in+sup.+stuck+in+port.&bYear=2000&ageLeft=kinda+Full-Stack+Developer+at+age&ageRight=&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5">
+  <img src="http://readme.katsuragi.cyou/api/svg/?gh=kana2011th&id=1833001&tw=kana2011th&name=Khanaphon&lName=P.&subText=full-stack+dev.+now+in+sup.+stuck+in+port.&bYear=2000&ageLeft=kinda+Full-Stack+Developer+at+age&ageRight=&fc1=48847A&fc2=313E51&bg=2e2f2f&fg=f5f5f5">
 </a>
 <br/>
 
